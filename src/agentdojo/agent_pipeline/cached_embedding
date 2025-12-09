@@ -1,0 +1,33 @@
+EMBEDDING_CACHE_ENABLED = True
+embedding_cache: dict[str, np.ndarray] = {}
+
+embedding_stats = {"hits": 0, "misses": 0, "total_time": 0.0}
+
+
+def get_cached_embedding(client: OpenAI, text: str, model: str) -> np.ndarray:
+    key = f"{model}:{text}"
+
+    if EMBEDDING_CACHE_ENABLED and key in embedding_cache:
+        print(f"[CACHE HIT] {text[:80]}...")
+        embedding_stats["hits"] += 1
+        return embedding_cache[key]
+
+    start_time = time.time()
+    response = client.embeddings.create(input=text, model=model)
+    elapsed = time.time() - start_time
+    embedding_stats["misses"] += 1
+    embedding_stats["total_time"] += elapsed
+
+    emb = np.array(response.data[0].embedding)
+    if EMBEDDING_CACHE_ENABLED:
+        embedding_cache[key] = emb
+    return emb
+
+
+def print_embedding_stats():
+    print("=" * 50)
+    print("[EMBEDDING STATS]")
+    print(f"  Hits: {embedding_stats['hits']}")
+    print(f"  Misses: {embedding_stats['misses']}")
+    print(f"  Total embedding time: {embedding_stats['total_time']:.3f}s")
+    print("=" * 50)
