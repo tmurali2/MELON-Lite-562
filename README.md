@@ -1,6 +1,13 @@
 <center>
+# MELON-Lite: MELON-Lite: A Resource-Efficient Hybrid Defense for Lightweight LLM Agents Against Indirect Prompt Injection Attacks
 
-# AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents
+MELON-Lite is an extended and lightweight implementation of the MELON framework, evaluated using AgentDojo. The repository includes all the code necessary to run and reproduce our results. 
+
+We provide additional defenses:
+
+
+
+## AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents
 
 ![GitHub License](https://img.shields.io/github/license/ethz-spylab/agentdojo) ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/ethz-spylab/agentdojo/lint-docs.yaml)
  ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/agentdojo) ![PyPI - Downloads](https://img.shields.io/pypi/dm/agentdojo) ![PyPI - Version](https://img.shields.io/pypi/v/agentdojo)
