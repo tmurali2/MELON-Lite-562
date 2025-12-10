@@ -1,4 +1,5 @@
 <center>
+
 # MELON-Lite: MELON-Lite: A Resource-Efficient Hybrid Defense for Lightweight LLM Agents Against Indirect Prompt Injection Attacks
 
 MELON-Lite is an extended and lightweight implementation of the MELON framework, evaluated using AgentDojo. The repository includes all the code necessary to run and reproduce our results. 
