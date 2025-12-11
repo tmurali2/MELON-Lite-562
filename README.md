@@ -5,15 +5,17 @@
 MELON-Lite is an extended and lightweight implementation of the MELON framework (https://github.com/kaijiezhu11/MELON/tree/main), evaluated using AgentDojo. The repository includes all the code necessary to run and reproduce our results. 
 
 We provide additional defenses:
-```bashDEFENSES = [
-    "tool_filter",\
-    "transformers_pi_detector",\
-    "spotlighting_with_delimiting",\
-    "repeat_user_prompt",\
-    "melon",\
-    "melon_hpa",\
-    "melon_nlp",\
-```]
+```bash
+DEFENSES = [
+    "tool_filter",
+    "transformers_pi_detector",
+    "spotlighting_with_delimiting",
+    "repeat_user_prompt",
+    "melon",
+    "melon_hpa",
+    "melon_nlp",
+]
+```
 
 
 ## AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents
