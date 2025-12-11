@@ -6,13 +6,13 @@ MELON-Lite is an extended and lightweight implementation of the MELON framework 
 
 We provide additional defenses:
 DEFENSES = [
-    "tool_filter",
-    "transformers_pi_detector",
-    "spotlighting_with_delimiting",
-    "repeat_user_prompt",
-    "melon",
-    "melon_hpa",
-    "melon_nlp",
+    "tool_filter",\
+    "transformers_pi_detector",\
+    "spotlighting_with_delimiting",\
+    "repeat_user_prompt",\
+    "melon",\
+    "melon_hpa",\
+    "melon_nlp",\
 ]
 
 
