@@ -21,12 +21,7 @@ Note: Make sure to pull qwen2.5:7B, llama-3.1:8B, gpt-oss:20B, and nomic-embed-t
 To run melon_nlp defense, for instance, use the following command (other modules also follow similar patterns, just replace the defense to what you're trying to run): 
 
 ```bash
-uv run python -m agentdojo.scripts.benchmark \
-    -s travel \
-    --model ollama \
-    --model-id qwen2.5:7b \
-    --defense melon_nlp \
-    --attack ignore_previous
+python -m agentdojo.scripts.benchmark -s travel --model ollama --model-id qwen2.5:7b --defense melon_nlp --attack ignore_previous
 ```
 
 ## AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents
