@@ -24,7 +24,7 @@ To run melon_nlp defense with the travel suite and the ignore previous attack on
 python -m agentdojo.scripts.benchmark -s travel --model ollama --model-id qwen2.5:7b --defense melon_nlp --attack ignore_previous
 ```
 
-Other modules also follow similar patterns, just replace the defense, attacks, models, and suite to what you're trying to run.
+Other modules also follow similar patterns -- just replace the defense, attacks, models, and suite.
 
 ## AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents
 
